@@ -51,32 +51,33 @@ int main() {
         cout << "\nVoce tem combustivel suficiente para completar a viagem!\n";
     }
 
+        // Verificação de entradas inválidas
+    if (distance <= 0 || fuel <= 0 || time <= 0) {
+        cout << "\n[Erro] Valores invalidos inseridos! (distancia, combustivel e tempo devem ser maiores que 0)\n";
+        cout << "=== Fim do programa ===\n";
+        return 0;
+    }
+
+    // Estrutura "Viagem longa" – usar for para simular paradas (ex: consumo acumulado a cada 50 km)
+    cout << "\n=== Simulacao de Viagem Longa ===\n";
+    double totalConsumed = 0;
+    for (double km = 50; km <= distance; km += 50) {
+        totalConsumed += 50 / kmPerLiter;
+        cout << "Aos " << km << " km, total consumido: " << totalConsumed << " L\n";
+    }
+
+    //Atrasado
+    if (avgSpeed > 120) {
+        cout << "\nCondicao 'Você está atrasado': A velocidade necessaria (" << avgSpeed 
+             << " km/h) e muito alta. Voce chegara atrasado se dirigir com seguranca.\n";
+    }
+
+    // Lisozinho
+    if (fuel > fuelNeeded * 1.2) {
+        cout << "\nCondicao 'Está lisinho': Voce possui combustivel de sobra para uma viagem tranquila.\n";
+    }
+
+
     cout << "\n=== Fim do programa ===\n";
     return 0;
 }
-
-
-// DEV 1 — Estrutura base e entrada de dados
-
-// Tarefas:
-
-//  Criar o arquivo principal main.c ou main.cpp
-
-//  Declarar as variáveis (em inglês):
-
-// float avgSpeed, fuelEfficiency, distance = 187, time, fuelPrice, fuelNeeded, totalCost;
-
-// Usar scanf e printf para entrada e saída:
-
-// printf("Enter average speed (km/h): ");
-// scanf("%f", &avgSpeed);
-
-// Calcular:
-
-// time = distance / avgSpeed
-
-// fuelNeeded = distance / fuelEfficiency
-
-// totalCost = fuelNeeded * fuelPrice
-
-// Mostrar os resultados com printf
