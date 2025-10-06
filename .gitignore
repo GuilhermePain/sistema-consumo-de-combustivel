@@ -1,33 +1,156 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# ####################### #
+#  SAÍDAS DE COMPILAÇÃO   #
+# ####################### #
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# Diretórios de build comuns
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+build-*/
+bin/
+obj/
+out/
 
-### VS Code ###
+# Diretórios de compilação do Visual Studio e outros
+Debug/
+Release/
+x64/
+Win32/
+ipch/
+*.aps
+*.ncb
+*.suo
+*.ilk
+*.sdf
+
+# Arquivos objeto
+*.o
+*.obj
+*.o.d
+
+# Bibliotecas estáticas e dinâmicas
+*.a
+*.lib
+*.so
+*.so.*
+*.dll
+*.dylib
+
+# Executáveis
+*.exe
+*.out
+*.app
+
+# Headers pré-compilados
+*.pch
+*.gch
+
+# Arquivos de dependência do compilador
+*.d
+*.dep
+
+
+# ###################### #
+#  SISTEMAS DE BUILD     #
+# ###################### #
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+CMakeLists.txt.user
+
+# Meson
+meson-logs/
+meson-private/
+
+# Bazel
+bazel-*
+
+# Makefiles gerados (o Makefile principal deve ser versionado)
+Makefile.Debug
+Makefile.Release
+
+
+# ########################### #
+#  EDITORES DE CÓDIGO E IDES  #
+# ########################### #
+
+# Visual Studio / Visual Studio Code
+.vs/
 .vscode/
+# Nota sobre .vscode: Descomente as linhas abaixo se quiser compartilhar
+# configurações de build (tasks.json) e debug (launch.json) com a equipe.
+#!.vscode/tasks.json
+#!.vscode/launch.json
+#!.vscode/extensions.json
+*.sln.dotsettings
+
+# CLion / JetBrains
+.idea/
+cmake-build-*/
+
+# Qt Creator
+*.pro.user
+*.pro.user.*
+*.creator.user
+
+# Eclipse CDT
+.cproject
+.project
+.settings/
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+
+# NetBeans
+nbproject/
+build/
+dist/
+nbdist/
+.nb-gradle/
+
+
+# ########################## #
+#  DEPURAÇÃO E PROFILING     #
+# ########################## #
+
+# Arquivos de depuração do MSVC
+*.pdb
+*.idb
+
+# Core dumps
+core
+core.*
+
+# Saídas de profiling (gprof)
+gmon.out
+*.prof
+
+
+# ############## #
+#  DIVERSOS      #
+# ############## #
+
+# Arquivos de log
+*.log
+*.log.*
+
+# Arquivos temporários e de backup de editores
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Arquivos compactados (geralmente resultados de um build)
+*.zip
+*.tar.gz
+*.tgz
+*.rar
