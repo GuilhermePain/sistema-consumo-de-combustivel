@@ -104,7 +104,7 @@ O sistema ajusta o consumo de acordo com a velocidade, simula o progresso da via
 - Voce precisara abastecer aproximadamente 5.53 litros a mais.
 - O custo total para completar o tanque sera de R$ 34.27.
 - Condicao 'Está lisinho': Voce possui combustivel de sobra para uma viagem tranquila.
----
+  
 === Fim do programa ===
 
 
@@ -126,9 +126,10 @@ Execução
 
 No Linux/macOS:
 
-```./sistema_consumo```
+```./main```
 
 No Windows:
 
-```sistema_consumo.exe```
+```main.exe```
+
 
