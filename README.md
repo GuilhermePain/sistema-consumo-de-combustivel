@@ -1,5 +1,8 @@
 # 🚗 Sistema de Consumo de Combustível
 
+#Link para histórico de desenvolvimento e demais anexos de organograma, análise de requisitos e fluxograma do sistema:
+https://trello.com/b/lgtAIFOi/sistema-de-combust%C3%ADvel
+
 ## 📘 Descrição
 Este programa em **C++** calcula e valida a quantidade de combustível necessária para uma viagem, considerando:
 
@@ -103,3 +106,28 @@ O sistema ajusta o consumo de acordo com a velocidade, simula o progresso da via
 - Condicao 'Está lisinho': Voce possui combustivel de sobra para uma viagem tranquila.
 ---
 === Fim do programa ===
+
+
+---
+
+## 🧰 Como Executar o Projeto
+
+### ✅ Pré-requisitos
+- Ter instalado um compilador **C++** (GCC, Clang ou MSVC).  
+- Sistema operacional compatível (Windows, Linux ou macOS).
+
+### 🔧 Compilação
+Abra o terminal no diretório do arquivo e execute:
+
+```bash
+g++ sistema_consumo.cpp -o sistema_consumo
+```
+Execução
+
+No Linux/macOS:
+
+```./sistema_consumo```
+
+No Windows:
+
+```sistema_consumo.exe```
