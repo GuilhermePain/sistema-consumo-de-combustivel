@@ -120,7 +120,7 @@ O sistema ajusta o consumo de acordo com a velocidade, simula o progresso da via
 Abra o terminal no diretório do arquivo e execute:
 
 ```bash
-g++ sistema_consumo.cpp -o sistema_consumo
+g++ main.cpp -o main
 ```
 Execução
 
@@ -131,3 +131,4 @@ No Linux/macOS:
 No Windows:
 
 ```sistema_consumo.exe```
+
